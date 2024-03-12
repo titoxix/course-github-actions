@@ -1,5 +1,3 @@
-import 'dotenv/config'
 
-
-const user = process.env.MY_USER
+const user = process.env.USER
 console.log("Hello World from node!!!!", user)
