@@ -11,6 +11,4 @@ jobs:
       GRETTING: Hello
     steps:
       - name: Gretting
-        run: echo "$GRETTING, $NAME. Today is $WEEK_DAY!"
-        env:
-          NAME: Tito
+        run: echo "$GRETTING, ${{ vars.NAME }}. Today is ${{ env.WEEK_DAY }}!"
